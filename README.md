@@ -1,7 +1,5 @@
 # PageDonuts
 
-# Ícones Redes Sociais
-
 ![in Development](https://img.shields.io/badge/Project%20-%20JavaScript-green) 
 
 página com efeito de mudar background e imagem.

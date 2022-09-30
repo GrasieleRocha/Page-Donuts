@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Donuts</title>
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="./img/donuts5.png" class="logo"></a>
+        <p class="logoNome">DONUTS</p>
+        <ul>
+          <li>Chocolate</li>
+          <li>Vanilla</li>
+          <li>Strawberry</li>
+          <li>Others</li>
+        </ul>
+      </header>
+      <div class="content">
+      <div class="textBox">
+      <h2>That' what<br><span> i like</h2>
+      <p>donut is a small donut-shaped cake, popular in the United States and of uncertain origin. It consists of a fried sugary dough, which can be covered with different types of sweet and colorful coating, such as chocolate.</p>
+      <a href="#gig">view all products</a>
+      </div>
+      <div class="imgBox">
+      <img src="./img/donuts2.png" class="donuts">
+      </div>
+    </div>
+  </div>
+  <ul class="thumb">
+    <li><img src="./img/donutschocolate-removebg-preview.png" onclick="imgSlider('./img/donuts2.png');changeBgColor('#c557179f')"></li>
+    <li><img src="./img/donutsazul-removebg-preview (1).png" onclick="imgSlider('./img/donutsazul.png'); changeBgColor('#76bac8')"></li>
+    <li><img src="./img/donutsmorango-removebg-preview (2).png"onclick="imgSlider('./img/donutsrosa.png');changeBgColor('#ecabbb')"></li>
+    
+  </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.donuts').src = anything;
+      }
+      function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>
